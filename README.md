@@ -2,7 +2,7 @@
 
 This repository contains my projects and tasks completed during the **Datheon Machine Learning & Data Science Internship**.
 
-The projects demonstrate practical skills in data analysis, preprocessing, feature engineering, machine learning model development, evaluation, and visualization.
+The projects demonstrate practical skills in data analysis, preprocessing, feature engineering, machine learning model development, model evaluation, and data visualization.
 
 ## Completed Tasks
 
@@ -81,6 +81,54 @@ Built regression models to predict median house values using the California Hous
 
 ---
 
+### Task 03: Customer Churn Prediction – Telecom Dataset
+
+**Project Overview**
+
+Developed and compared ensemble machine learning models to predict customer churn using telecommunications subscription records.
+
+The project focuses on identifying customers who are likely to discontinue their services.
+
+**Objectives**
+- Perform Exploratory Data Analysis (EDA).
+- Convert `TotalCharges` into numeric format.
+- Handle missing values using imputation.
+- Encode categorical features using OneHotEncoder.
+- Handle class imbalance using class weighting.
+- Train Random Forest and XGBoost classifiers.
+- Apply Stratified 5-Fold Cross-Validation.
+- Evaluate models using classification metrics and ROC-AUC.
+- Visualize ROC curves and confusion matrices.
+- Extract and visualize the top 10 important features.
+
+**Dataset**
+- Name: Telco Customer Churn Dataset
+- Source: IBM Telco Customer Churn
+- Target: Churn (Yes / No)
+- Problem Type: Binary Classification
+
+**Models**
+- Random Forest Classifier
+- XGBoost Classifier
+
+**Model Performance**
+
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Random Forest | 78.42% | 58.45% | 64.71% | 61.42% | 83.47% |
+| XGBoost | 75.87% | 53.26% | 74.33% | 62.05% | 83.53% |
+
+**Key Findings**
+- Both models achieved ROC-AUC scores above 80%.
+- XGBoost achieved the highest ROC-AUC of 83.53%.
+- XGBoost achieved a higher Recall of 74.33%.
+- Random Forest achieved a higher Accuracy of 78.42%.
+- Contract type, customer tenure, monthly charges, and internet service were among the most influential features.
+
+**Notebook:** `Task_03_Customer_Churn_Prediction.ipynb`
+
+---
+
 ## Technologies & Tools
 
 - Python
@@ -89,6 +137,8 @@ Built regression models to predict median house values using the California Hous
 - Matplotlib
 - Seaborn
 - Scikit-learn
+- XGBoost
+- Imbalanced-learn
 - Jupyter Notebook
 - Git & GitHub
 
@@ -99,6 +149,7 @@ Datheon_Machine_Learning_-_Data_Science_Internship/
 │
 ├── Task 01 – Multi-Class Classification_iris.ipynb
 ├── Task_02_California_Housing_Price_Prediction.ipynb
+├── Task_03_Customer_Churn_Prediction.ipynb
 ├── README.md
 └── requirements.txt
 ```
@@ -106,7 +157,7 @@ Datheon_Machine_Learning_-_Data_Science_Internship/
 ## How to Run
 
 1. Clone this repository.
-2. Install the required libraries:
+2. Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -131,7 +182,7 @@ jupyter notebook
 
 ## Progress
 
-This repository will be continuously updated as additional internship tasks are completed.
+Three machine learning projects have been completed as part of this internship. This repository will be updated as additional tasks are completed.
 
 ---
 
