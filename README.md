@@ -1,36 +1,87 @@
-
 # Datheon - Machine Learning & Data Science Internship
 
-## About This Repository
+This repository contains my projects and tasks completed during the **Datheon Machine Learning & Data Science Internship**.
 
-This repository contains my projects and tasks completed during the Datheon Machine Learning & Data Science Internship.
+The projects demonstrate practical skills in data analysis, preprocessing, feature engineering, machine learning model development, evaluation, and visualization.
 
-The projects focus on practical applications of Machine Learning, data preprocessing, exploratory data analysis, model training, evaluation, and visualization.
+## Completed Tasks
 
-## Task 01: Multi-Class Classification Pipeline
+### Task 01: Multi-Class Classification – Iris Dataset
 
-### Project Overview
+**Project Overview**
 
-This project implements and compares two supervised Machine Learning classification algorithms using the Iris dataset.
+Developed and compared supervised machine learning classification models to predict Iris flower species.
 
-### Objectives
-
-- Load and explore the Iris dataset.
+**Objectives**
 - Perform Exploratory Data Analysis (EDA).
-- Preprocess the data and split it into training and testing sets.
+- Prepare and split the dataset.
 - Apply feature scaling.
-- Train Logistic Regression and Decision Tree classifiers.
-- Evaluate and compare model performance.
+- Train and evaluate classification models.
+- Compare model performance using classification metrics.
 
-### Dataset
+**Dataset**
+- Name: Iris Dataset
+- Samples: 150
+- Features: 4 numerical features
+- Target: Setosa, Versicolor, Virginica
 
-- **Name:** Iris Dataset
-- **Samples:** 150
-- **Features:** 4 numerical features
-- **Target:** Species (Setosa, Versicolor, Virginica)
-- **Source:** [Iris Dataset - Seaborn](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv)
+**Models**
+- Logistic Regression
+- Decision Tree Classifier
 
-### Technologies Used
+**Model Performance**
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 93.33% | 93.33% | 93.33% | 93.33% |
+| Decision Tree | 93.33% | 93.33% | 93.33% | 93.33% |
+
+**Notebook:** `Task 01 – Multi-Class Classification_iris.ipynb`
+
+---
+
+### Task 02: California Housing Price Prediction
+
+**Project Overview**
+
+Built regression models to predict median house values using the California Housing dataset.
+
+**Objectives**
+- Perform Exploratory Data Analysis (EDA).
+- Handle missing values using imputation.
+- Analyze correlations and multicollinearity.
+- Engineer additional ratio and interaction features.
+- Apply feature scaling and categorical encoding.
+- Train and compare regression models.
+- Tune regularization parameters using GridSearchCV.
+- Analyze prediction errors and residual distributions.
+
+**Dataset**
+- Name: California Housing Dataset
+- Samples: 20,640
+- Features: 8 original input features
+- Target: Median House Value
+
+**Models**
+- Linear Regression (OLS)
+- Ridge Regression (L2 Regularization)
+- Lasso Regression (L1 Regularization)
+
+**Model Performance**
+
+| Model | RMSE | MAE | R² Score |
+|---|---:|---:|---:|
+| Linear Regression | 69,127.04 | 49,645.49 | 0.6353 |
+| Ridge Regression | 69,134.97 | 49,652.14 | 0.6353 |
+| Lasso Regression | 69,128.09 | 49,646.43 | 0.6353 |
+
+**Best Test Performance:** Linear Regression, with an R² score of approximately 0.6353.
+
+**Notebook:** `Task_02_California_Housing_Price_Prediction.ipynb`
+
+---
+
+## Technologies & Tools
 
 - Python
 - Pandas
@@ -39,54 +90,49 @@ This project implements and compares two supervised Machine Learning classificat
 - Seaborn
 - Scikit-learn
 - Jupyter Notebook
+- Git & GitHub
 
-### Models
-
-1. Logistic Regression
-2. Decision Tree Classifier
-
-### Model Performance
-
-| Model | Accuracy | Precision | Recall | F1-Score |
-|---|---:|---:|---:|---:|
-| Logistic Regression | 93.33% | 93.33% | 93.33% | 93.33% |
-| Decision Tree | 93.33% | 93.33% | 93.33% | 93.33% |
-
-### Project Structure
+## Repository Structure
 
 ```text
-Datheon_Machine_Learning_&_Data_Science_Internship/
+Datheon_Machine_Learning_-_Data_Science_Internship/
 │
-├── Task_01_Multi_Class_Classification.ipynb
+├── Task 01 – Multi-Class Classification_iris.ipynb
+├── Task_02_California_Housing_Price_Prediction.ipynb
 ├── README.md
 └── requirements.txt
 ```
 
-### How to Run
+## How to Run
 
 1. Clone this repository.
-2. Install the required dependencies:
+2. Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Open the Jupyter Notebook:
+3. Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-4. Open `Task_01_Multi_Class_Classification.ipynb`.
-5. Run all cells.
+4. Open the notebook you want to explore.
+5. Run the cells sequentially.
 
-**Note:** An active internet connection is required to load the Iris dataset from its online source.
+**Note:** An active internet connection may be required to download the datasets from their online sources.
 
-## Internship
+## Internship Information
 
-**Organization:** Datheon  
-**Track:** Machine Learning & Data Science
+- **Organization:** Datheon
+- **Track:** Machine Learning & Data Science
+- **Duration:** 4 Weeks
+
+## Progress
+
+This repository will be continuously updated as additional internship tasks are completed.
 
 ---
 
-*This repository will be updated as additional internship tasks are completed.*
+**Developed as part of the Datheon Machine Learning & Data Science Internship.**
